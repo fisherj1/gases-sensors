@@ -1,1 +1,4 @@
 data/
+catboost/results
+catboost/experiments
+.venv/
