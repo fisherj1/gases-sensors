@@ -4,3 +4,8 @@ catboost/experiments
 .venv/
 torch/experiments
 catboost_info/
+statistics/data
+statistics/data_normed
+lasso/experiments
+lasso/results
+tools/__pycache__
