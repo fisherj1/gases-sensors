@@ -24,9 +24,9 @@ DYNAMICS = [
     'linear',
     'linear_short',
     'steps_up',
-    'steps_up_pulse',
-    'steps_down',
-    'steps_down_pulse'
+    # 'steps_up_pulse',
+    # 'steps_down',
+    # 'steps_down_pulse'
 ]
 SENSORS = ['R1','R2', 'R3']
 GASES = ['NO', 'CH4', 'H2S', 'SO2', 'HCOH', 'CO', 'H2', 'NO2', 'NH3']
@@ -182,7 +182,7 @@ def train_catboost_new(
         metric_dict[sensor].to_csv(os.path.join(exp_path, f'{sensor}.csv'), index=False)  
 
 train_catboost_new(
-    path='data/exp1_melted',
+    path='data/exp4_melted',
     exp_path='catboost/experiments', 
     dynamics=DYNAMICS, 
     sensors=SENSORS, 
